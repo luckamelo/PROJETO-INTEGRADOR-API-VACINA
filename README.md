@@ -40,7 +40,9 @@ Controllers: recebe a requisição e envia resposta
 Services: contém os dados e regras de negócio
 
 Como Rodar o Projeto
+
 Instalar o Node.js
+
 Para verificar:
 bash
 node -v
@@ -59,14 +61,18 @@ Iniciar o servidor
 npm start
 
 Acessando a API
+
 Com o servidor rodando, abra no navegador:
 http://localhost:3000/
+
 A API retornará:
 API de Vacinação – funcionando!
 
 Endopoints disponíveis
+
 Listar todas as cidades
 GET /cities
+
 Exemplo de resposta:
 [
 { "id": 1, "name": "Maceió" },
@@ -75,6 +81,7 @@ Exemplo de resposta:
 
 Buscar uma cidade específica
 GET /cities/:id
+
 Exemplo:
 /cities/1
 Resposta:
@@ -85,6 +92,7 @@ Para cidade inexistente:
 
 Listar pontos de vacinação por cidade
 GET /vaccination-points/:cityId
+
 Exemplo:
 /vaccination-points/1
 Resposta:
@@ -100,6 +108,7 @@ Resposta:
 ]
 
 Como Testar a API
+
 Pode ser testada usando:
 •	Navegador
 •	Postman
@@ -107,11 +116,13 @@ Pode ser testada usando:
 •	Thunder Client (VS Code)
 
 Exemplo no Postman:
+
 GET → http://localhost:3000/cities
 GET → http://localhost:3000/cities/1
 GET → http://localhost:3000/vaccination-points/1
 
 Objetivo do Projeto:
+
 Demonstrar domínio de API REST utilizando Node.js
 Criar uma solução modular seguindo boas práticas
 Aplicar conceitos de rotas, lógica de negócio e controle de dados
