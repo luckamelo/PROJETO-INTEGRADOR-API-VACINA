@@ -1,0 +1,9 @@
+GET http://localhost:3000/cities
+
+###
+
+GET http://localhost:3000/cities/1
+
+###
+
+GET http://localhost:3000/vaccination-points/1
