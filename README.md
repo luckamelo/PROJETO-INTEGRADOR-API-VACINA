@@ -12,8 +12,9 @@ Tecnologias Utilizadas:
 Estrutura do Projeto
 
 PROJETO-INTEGRADOR-API-VACINA/
+
 │
-├── server.js
+ ├── server.js
 ├── package.json
 │
 └── src/
