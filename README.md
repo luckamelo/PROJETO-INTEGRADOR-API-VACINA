@@ -44,58 +44,76 @@ Como Rodar o Projeto
 Instalar o Node.js
 
 Para verificar:
+
 bash
 node -v
 npm -v
 
 Clonar o repositório
+
 git clone https://github.com/luckamelo/PROJETO-INTEGRADOR-API-VACINA.git
 
 Entrar na pasta do projeto
+
 cd PROJETO-INTEGRADOR-API-VACINA
 
 Instalar dependências
+
 npm install
 
 Iniciar o servidor
+
 npm start
 
 Acessando a API
 
 Com o servidor rodando, abra no navegador:
+
 http://localhost:3000/
 
 A API retornará:
+
 API de Vacinação – funcionando!
 
 Endopoints disponíveis
 
 Listar todas as cidades
+
 GET /cities
 
 Exemplo de resposta:
+
 [
 { "id": 1, "name": "Maceió" },
 { "id": 2, "name": "Arapiraca" }
 ]
 
 Buscar uma cidade específica
+
 GET /cities/:id
 
 Exemplo:
+
 /cities/1
+
 Resposta:
+
 { "id": 1, "name": "Maceió" }
 
 Para cidade inexistente:
+
 { "error": "Cidade não encontrada" }
 
 Listar pontos de vacinação por cidade
+
 GET /vaccination-points/:cityId
 
 Exemplo:
+
 /vaccination-points/1
+
 Resposta:
+
 [
 {
 "id": 101,
@@ -110,6 +128,7 @@ Resposta:
 Como Testar a API
 
 Pode ser testada usando:
+
 •	Navegador
 •	Postman
 •	Insomnia
